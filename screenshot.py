@@ -29,7 +29,7 @@ if url is None or filetype is None:
 if output is None:
     output = url.replace('.', '_').replace('://', '_')
 
-driver = webdriver.Firefox(options=options)
+driver = webdriver.Firefox(options=options, service_log_path=os.path.devnull)
 driver.get(url)
 driver.implicitly_wait(10)
 driver.get_screenshot_as_file(output + ".png")

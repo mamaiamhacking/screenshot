@@ -1,6 +1,6 @@
 # Introduction
 
-A simple python screenshot tool in linux. 
+A simple python web screenshot tool in linux. 
 
 # Installation
 
