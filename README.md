@@ -35,7 +35,7 @@ ls images
 # Options
 
 ```
-usage: screen.py [-h] [-u URL] [-o OUTPUT] [-t FILETYPE] [-q QUALITY]
+usage: python3 screenshot.py [-h] [-u URL] [-o OUTPUT] [-t FILETYPE] [-q QUALITY]
 
 optional arguments:
   -h, --help   show this help message and exit
