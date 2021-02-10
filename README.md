@@ -4,7 +4,7 @@ A simple python screenshot tool in linux.
 
 # Installation
 
-Require `firefox`, `selenium`, `geckodriver`.
+Require `firefox`, `selenium`, `Pillow`, `geckodriver`.
 
 Corsy only works with `Python 3` and has the following depencies:
 
