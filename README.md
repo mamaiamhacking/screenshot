@@ -9,11 +9,11 @@ Require `firefox`, `selenium`, `geckodriver`.
 Corsy only works with `Python 3` and has the following depencies:
 
 * [Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux).
-* selenium
-```
-python3 -m pip install selenium --upgrade
-python3 -m pip install Pillow --upgrade
-```
+* selenium & Pillow
+    ```
+    python3 -m pip install selenium --upgrade
+    python3 -m pip install Pillow --upgrade
+    ````
 * [geckodriver](https://github.com/mozilla/geckodriver/releases)
 
 
