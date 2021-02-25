@@ -1,6 +1,6 @@
 # Introduction
 
-A simple python web screenshot tool in linux. 
+Extract the screenshot function of https://github.com/FortyNorthSecurity/EyeWitness/
 
 # Installation
 
@@ -43,4 +43,5 @@ optional arguments:
   -o OUTPUT    Output file name.
   -t FILETYPE  File type. png webp jpeg...
   -q QUALITY   Quality. 0-100. Default 50
+  --timeout    Timeout. Maximum number of seconds to wait while requesting a web page. Default 15
 ```

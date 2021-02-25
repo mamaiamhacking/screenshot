@@ -13,7 +13,7 @@ parser.add_argument('-u', help='Target url.', dest='url')
 parser.add_argument('-o', help='Output file name.', dest='output')
 parser.add_argument('-t', help='File type. png webp jpeg...', dest='filetype')
 parser.add_argument('-q', help='Quality. 0-100. Default 50', type=int, dest='quality', default=50)
-parser.add_argument('--timeout', help='Timeout. Maximum number of seconds to wait while requesting a web page. Default: 15', type=int, dest='timeout', default=15)
+parser.add_argument('--timeout', help='Timeout. Maximum number of seconds to wait while requesting a web page. Default 15', type=int, dest='timeout', default=15)
 args = parser.parse_args()
 
 url = args.url
