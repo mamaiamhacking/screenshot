@@ -53,12 +53,23 @@ driver = webdriver.Firefox(profile, capabilities=capabilities, options=options, 
 driver.set_page_load_timeout(args.timeout)
 
 
-try:
-    driver.get(url)
-except:
-    print('Screen shot error: ' + url)
-    driver.close()
-    exit(1)
+maxRetryTimes = 2
+retry=0
+
+def getUrl():
+    global retry
+    try:
+        driver.get(url)
+    except:
+        if retry < maxRetryTimes:
+            retry += 1
+            getUrl()
+            return
+        print('Screen shot error: ' + url)
+        driver.close()
+        exit(1)
+
+getUrl()
 
 driver.implicitly_wait(10)
 driver.get_screenshot_as_file(output + ".png")
